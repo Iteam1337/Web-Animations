@@ -1,0 +1,84 @@
+:root {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.buttons button {
+  text-align:center;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 120%;
+  color: #FFF;
+  background: #0CADA7;
+  padding: 10px 30px;
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  transition: all 0.2s ease-in-out;  
+}
+
+.buttons button:hover {
+  background: #0A948F;
+}
+
+#app {
+  text-align: center;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  animation-direction: alternate;
+}
+
+@keyframes growSimple {
+  from {
+    width: 150px;
+    height: 150px;
+  }
+  to {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@keyframes twoStep {
+  0% {
+    width: 150px;
+    height: 150px;
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    width: 300px;
+    height: 150px;
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    transform: rotate(90deg);
+  }
+}
