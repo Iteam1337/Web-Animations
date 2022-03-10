@@ -2,13 +2,16 @@ import { animateByErik } from "./animate-by-erik";
 
 const IPSUM_LOREM = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim tellus, dictum ac ligula nec, dignissim efficitur enim. Suspendisse finibus diam in volutpat sollicitudin. Etiam tempor lacus mauris, in rhoncus magna facilisis eget. Ut id ultrices turpis, vel dictum dolor. Integer pulvinar mi dui, sed scelerisque velit dapibus sed. Praesent vitae molestie nunc, id commodo nisi. Mauris fringilla risus nisl, nec finibus enim fringilla nec. Cras efficitur feugiat orci, a dignissim quam ullamcorper non. Duis vel mauris odio. Nunc ex massa, scelerisque et nunc eu, venenatis feugiat risus. Integer congue eros eu fermentum pulvinar. Maecenas non sagittis ante. Praesent sed ex est. Nam pharetra porttitor dapibus. Vivamus in lorem ut turpis pulvinar lacinia.'
 
-document.querySelector('#manualAnimation').addEventListener('click', () => {
+document.querySelector('#manualAnimation')
+		.addEventListener('click', () => {
     const box = document.querySelector('.box')
 
     const words = IPSUM_LOREM.split(' ')
 
     function animateWords(fraction) {
-        box.innerText = words.slice(0, words.length * fraction).join(' ')
+        box.innerText = words
+			.slice(0, words.length * fraction)
+			.join(' ')
     }
     
     animateByErik(animateWords, 5000, interpolate)

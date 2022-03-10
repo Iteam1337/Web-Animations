@@ -1,4 +1,5 @@
-document.querySelector('#webAnim1').addEventListener('click', () => {
+document.querySelector('#webAnim1')
+        .addEventListener('click', () => {
     const animation = [
         { width: '150px', height: '150px', },
         { width: '300px', height: '150px', },
@@ -12,9 +13,21 @@ document.querySelector('#webAnim1').addEventListener('click', () => {
     const box = document.querySelector('.box')
     box.animate(animation, timing)
 })
-let toggleAnim
 
-document.querySelector('#webAnim2'),addEventListener('click', () => {
+
+
+
+
+
+
+
+
+
+
+
+let toggleAnim
+document.querySelector('#webAnim2')
+        .addEventListener('click', () => {
     if (!toggleAnim) {
         const keyFrames = [
             { width: '150px', height: '150px', },
@@ -30,6 +43,5 @@ document.querySelector('#webAnim2'),addEventListener('click', () => {
         toggleAnim = box.animate(keyFrames, timing)    
     } else {
         toggleAnim.reverse()
-    }
-    
+    }    
 })
