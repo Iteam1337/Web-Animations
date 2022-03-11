@@ -45,7 +45,7 @@
   text-align: start;
   padding: 0.5em;
   width: 400px;
-  height: 400px;
+  height: auto;
   background-color: white;
   border: 1px solid black
 }

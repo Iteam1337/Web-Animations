@@ -18,10 +18,10 @@ document.querySelector('#manualAnimation')
 })
 
 function interpolate(value) {
-    return value // Linear    
+    // return value // Linear    
     // return Math.sin(Math.PI / 2 * value)
     // return Math.cos(Math.PI + Math.PI / 2 * value) + 1
-    // return easeOutBounce(value)
+    return easeOutBounce(value)
 }
 
 function easeOutBounce(x) {

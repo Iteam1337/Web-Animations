@@ -7,21 +7,12 @@ document.querySelector('#webAnim1')
     ]
     const timing = {
         duration: 2000,
-        fill: 'both',
+        fill: 'forwards',
     }
     
     const box = document.querySelector('.box')
     box.animate(animation, timing)
 })
-
-
-
-
-
-
-
-
-
 
 
 
